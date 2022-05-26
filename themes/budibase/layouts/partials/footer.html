@@ -1,4 +1,11 @@
 {{ $staticHash := now.Unix }}
+<div id="fastSearch" style="z-index: 999;">
+  <input id="searchInput" tabindex="0">
+  <ul id="searchResults">
+  </ul>
+</div>
+<script src="/js/fuse.js"></script> <!-- download and copy over fuse.js file from fusejs.io -->
+<script src="/js/fastsearch.js"></script>
 <footer>
     <div class="container space-3">
       <div class="row justify-content-md-between">
